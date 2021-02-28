@@ -112,7 +112,8 @@ section {
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
-.our-services .icon-box {
+.our-services .icon-box,
+.testimonial .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -123,7 +124,8 @@ section {
   z-index: 1;
 }
 
-.our-services .icon-box::before {
+.our-services .icon-box::before,
+.testimonial .icon-box::before {
   content: "";
   position: absolute;
   background: #cbe0fb;
@@ -135,34 +137,40 @@ section {
   z-index: -1;
 }
 
-.our-services .icon-box:hover::before {
+.our-services .icon-box:hover::before,
+.testimonial .icon-box:hover::before {
   background: #106eea;
   top: 0;
   border-radius: 0px;
 }
 
-.our-services .icon {
+.our-services .icon,
+.testimonial .icon {
   margin-bottom: 15px;
 }
 
-.our-services .icon i {
+.our-services .icon i,
+.testimonial .icon i {
   font-size: 48px;
   line-height: 1;
   color: #106eea;
   transition: all 0.3s ease-in-out;
 }
 
-.our-services .title {
+.our-services .title,
+.testimonial .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.our-services .title a {
+.our-services .title a,
+.testimonial .title a {
   color: #111;
 }
 
-.our-services .description {
+.our-services .description,
+.testimonial .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
@@ -226,6 +234,66 @@ section {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.testimonial .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.testimonial .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.testimonial .icon-box:hover::before {
+  background: #106eea;
+  top: 0;
+  border-radius: 0px;
+}
+
+.testimonial .icon {
+  margin-bottom: 15px;
+}
+
+.testimonial .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #106eea;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.testimonial .title a {
+  color: #111;
+}
+
+.testimonial .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
