@@ -110,10 +110,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Featured Services
+# Services
 --------------------------------------------------------------*/
-.our-services .icon-box,
-.testimonial .icon-box {
+.our-services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -124,8 +123,7 @@ section {
   z-index: 1;
 }
 
-.our-services .icon-box::before,
-.testimonial .icon-box::before {
+.our-services .icon-box::before {
   content: "";
   position: absolute;
   background: #cbe0fb;
@@ -137,40 +135,34 @@ section {
   z-index: -1;
 }
 
-.our-services .icon-box:hover::before,
-.testimonial .icon-box:hover::before {
+.our-services .icon-box:hover::before {
   background: #106eea;
   top: 0;
   border-radius: 0px;
 }
 
-.our-services .icon,
-.testimonial .icon {
+.our-services .icon {
   margin-bottom: 15px;
 }
 
-.our-services .icon i,
-.testimonial .icon i {
+.our-services .icon i {
   font-size: 48px;
   line-height: 1;
   color: #106eea;
   transition: all 0.3s ease-in-out;
 }
 
-.our-services .title,
-.testimonial .title {
+.our-services .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.our-services .title a,
-.testimonial .title a {
+.our-services .title a {
   color: #111;
 }
 
-.our-services .description,
-.testimonial .description {
+.our-services .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
@@ -251,35 +243,6 @@ section {
   z-index: 1;
 }
 
-.testimonial .icon-box::before {
-  content: "";
-  position: absolute;
-  background: #cbe0fb;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.testimonial .icon-box:hover::before {
-  background: #106eea;
-  top: 0;
-  border-radius: 0px;
-}
-
-.testimonial .icon {
-  margin-bottom: 15px;
-}
-
-.testimonial .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: #106eea;
-  transition: all 0.3s ease-in-out;
-}
-
 .testimonial .title {
   font-weight: 700;
   margin-bottom: 15px;
@@ -294,6 +257,26 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+.testimonial .icon-box .card-img-top {
+  transition: all 0.5s ease;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.testimonial .icon-box:hover .card-img-top {
+  transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+
+}
+
+.testimonial .icon-box .card-body {
+  transition: all 0.5s ease;
+  transform: translateY(0rem);
+}
+
+.testimonial .icon-box:hover .card-body {
+  transform: translateY(2rem);
 }
 
 /*--------------------------------------------------------------
